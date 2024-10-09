@@ -1,21 +1,29 @@
 # Calculadora Simples
 
-Este projeto é uma calculadora simples desenvolvida em **JavaScript** e **TypeScript**, que realiza as quatro operações matemáticas básicas: adição, subtração, multiplicação e divisão. Inclui testes automatizados, importação e exportação de módulos, e uma configuração de build completa.
+Este projeto é uma calculadora simples desenvolvida em JavaScript e TypeScript, que realiza as quatro operações matemáticas básicas: `adição`, `subtração`, `multiplicação` e `divisão`. 
+Inclui testes automatizados, importação e exportação de módulos e uma configuração de build completa. 
 
 ## Funcionalidades
 
-- **Adição**: Soma dois números.
-- **Subtração**: Subtrai um número do outro.
-- **Multiplicação**: Multiplica dois números.
-- **Divisão**: Divide um número pelo outro.
+- **Adição**: Soma dois números.  
+  Exemplo: `soma(2, 3)` retornaria `5`.
+
+- **Subtração**: Subtrai um número do outro.  
+  Exemplo: `subtracao(5, 2)` retornaria `3`.
+
+- **Multiplicação**: Multiplica dois números.  
+  Exemplo: `multiplicacao(4, 2)` retornaria `8`.
+
+- **Divisão**: Divide um número pelo outro.  
+  Exemplo: `divisao(10, 2)` retornaria `5`.
 
 ## Tecnologias Utilizadas
 
-- **TypeScript**: Tipagem estática e organização do código.
-- **JavaScript**: Lógica principal da calculadora.
-- **Node.js**: Ambiente para rodar o projeto e testes.
+- **TypeScript**: É um superconjunto do JavaScript que permite adicionar tipos ao código, ajudando a prevenir erros comuns e melhorando a legibilidade.
+- **JavaScript**: Lógica principal da calculadora, sendo a base do TypeScript.
+- **Node.js**: Plataforma que permite a execução de JavaScript no servidor, essencial para rodar testes e scripts de build.
 - **Jest**: Framework para testes automatizados.
-- **NPM**: Gerenciamento de dependências.
+- **NPM**: Gerenciador de dependências e scripts. Além de gerenciar pacotes, permite a execução de scripts definidos no `package.json`, como `npm run build`
 
 ## Testes
 
@@ -23,7 +31,34 @@ O projeto inclui uma suíte de testes automatizados com Jest, cobrindo todas as 
 
 ## Scripts Disponíveis
 
-- `npm run jest`: Roda todos os testes automatizados.
-- `npm run build`: Compila o projeto usando o TypeScript Compiler (tsc).
-- `npx tsc`: Compila o projeto diretamente com o TypeScript Compiler.
+- `npm run jest`: Executa todos os testes automatizados.
+- `npm run build`: Compila o projeto usando o TypeScript Compiler (tsc), gerando os arquivos JavaScript na pasta `dist`.
+- `npx tsc`: Compila o projeto diretamente, sem precisar definir um script no `package.json`.
+
+## Instalação
+
+Para instalar as dependências do projeto, execute:
+`bash`
+`npm install`
+
+## Execução
+
+Para rodar a calculadora, execute o script `npm run build` e, em seguida, execute o arquivo JavaScript gerado na pasta `dist`.
+
+## Testes
+
+O projeto inclui uma suíte de testes automatizados com Jest, cobrindo todas as operações da calculadora para garantir a precisão dos resultados. 
+Para rodar os testes, use:
+
+`npm run jest`
+
+## Referências
+
+- [Documentação do JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): Referência abrangente sobre JavaScript, incluindo informações sobre importação de arquivos e bibliotecas.
+  
+- [Documentação do Jest](https://jestjs.io/docs/getting-started): Guia completo para usar o Jest, um framework de testes que auxilia na criação e execução de testes automatizados.
+
+- [Documentação do TypeScript](https://www.typescriptlang.org/docs/): Para entender melhor as funcionalidades e benefícios do TypeScript, como tipagem e módulos.
+
+- [Node.js Documentation](https://nodejs.org/en/docs/): Para aprofundar-se na execução de JavaScript no servidor e no uso de pacotes.
 
